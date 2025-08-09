@@ -1,0 +1,155 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: serif;
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  width: 100%;
+  height: 200vh;
+  background-color: white;
+}
+.container > .header {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(255, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container > .header > .promotion {
+  display: flex;
+  gap: 20px;
+}
+.container > nav {
+  width: 100%;
+  height: 4%;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  background-color: white;
+}
+
+.container > nav > .logo {
+  width: 100px;
+  height: 100%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2QNHA0vFRIk_DC9W4XJ-dH9pUI5DTSWPBSw&s");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 50px;
+}
+
+.container > nav > ul {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.container > nav > ul > li {
+  width: 150px;
+  height: 60px;
+  font-size: 25px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.container > nav > ul > li:hover {
+  border: 2px solid black;
+  transform: rotate(1.2);
+  background-color: rgb(255, 0, 0);
+  box-shadow: 0 0 0 1px, 0 0 0 2px, 0 0 0 3px, 0 0 0 4px black;
+}
+
+.container > .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container > .content > .slide {
+  width: 80%;
+  height: 300px;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container > .content > .slide > .text {
+  width: 35%;
+  height: 70%;
+}
+.container > .content > .slide > .text > h1 {
+  font-size: 50px;
+  color: white;
+  text-shadow: 5px 1px black;
+  padding: 40px 40px 20px 50px;
+}
+.container > .content > .slide > .text > button {
+  width: 200px;
+  height: 70px;
+  background-color: aliceblue;
+  border-radius: 12px;
+  margin-left: 70px;
+  transition: all 1s ease-in-out;
+}
+.container > .content > .slide > .text > button:hover {
+  width: 400px;
+}
+.container > .content > .slide > .photo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.container > .cards {
+  margin-top: 30px;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container > .cards > .card {
+  width: 400px;
+  height: 520px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  transition: all 0.5s ease-in-out;
+}
+
+.container > .cards > .card > .img {
+  width: 100%;
+  height: 45%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.container > .cards > .card >.detail{
+  width: 100%;
+  height: 55%;
+}
+
+.container > .cards > .card >.detail>h4{
+  padding: 30px 50px;
+  text-align: justify;
+}
+
+.container > .cards > .card:hover{
+  transform: scale(1.03);
+}
+
+
+footer{
+  width: 100%;
+  height: 700px;
+}
